@@ -22,10 +22,10 @@ class Student(models.Model):
     # We can also use Student.objects.get(id=1) to get the student with a specific id.
     
 class Car(models.Model):
-    car_name= models.CharField(max_length=100)
-    speed= models.IntegerField()
-    color= models.CharField(max_length=50)
-    model_year= models.IntegerField(null=True, blank=True)
-    
-    def __str__(self)->str:
+    car_name = models.CharField(max_length=100)
+    speed = models.IntegerField()
+    color = models.CharField(max_length=50)
+    model_year = models.IntegerField(null=True, blank=True)
+
+    def __str__(self) -> str:
         return self.car_name

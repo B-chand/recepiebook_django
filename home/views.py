@@ -18,7 +18,7 @@ def home(request):
 
     return render(request, "index.html", context=context)
 
-def about (request):
+def about(request):
     return render(request, 'about.html')
 
 def contact(request):
