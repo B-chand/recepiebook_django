@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block start %}
+
+<style>
+	.hero {
+		background: radial-gradient(circle at 20% 20%, #f8f5ff 0, #f7f9fb 40%, #eef2f7 100%);
+		border-bottom: 1px solid #e5e7eb;
+	}
+	.badge-soft {
+		background: #e9f2ff;
+		color: #0d6efd;
+	}
+</style>
+
+<section class="hero py-5">
+	<div class="container py-4">
+		<div class="row align-items-center g-4">
+			<div class="col-lg-6">
+				<div class="d-inline-flex align-items-center gap-2 mb-3">
+					<span class="badge badge-soft px-3 py-2">Curate • Cook • Share</span>
+				</div>
+				<h1 class="fw-bold mb-3">Cook smarter with your personal recipe board.</h1>
+				<p class="lead text-secondary mb-4">
+					Save your best dishes, keep them organized, and access them anywhere. Add photos, notes, and updates as your recipes evolve.
+				</p>
+				<div class="d-flex gap-3">
+					<a class="btn btn-primary btn-lg" href="{% url 'recepies' %}">View Recipes</a>
+					<a class="btn btn-outline-primary btn-lg" href="{% url 'register' %}">Create an account</a>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="card shadow-sm border-0">
+					<div class="card-body p-4">
+						<h5 class="fw-bold mb-3">Why RecipeBook?</h5>
+						<div class="row g-3">
+							<div class="col-sm-6">
+								<div class="p-3 bg-light rounded-3 h-100">
+									<h6 class="fw-semibold mb-1">All your recipes</h6>
+									<p class="text-secondary mb-0">Keep your dishes together with images, notes, and quick edits.</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="p-3 bg-light rounded-3 h-100">
+									<h6 class="fw-semibold mb-1">Fast search</h6>
+									<p class="text-secondary mb-0">Find what you need instantly with keyword search.</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="p-3 bg-light rounded-3 h-100">
+									<h6 class="fw-semibold mb-1">Private by default</h6>
+									<p class="text-secondary mb-0">Your recipes stay tied to your account.</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="p-3 bg-light rounded-3 h-100">
+									<h6 class="fw-semibold mb-1">On any device</h6>
+									<p class="text-secondary mb-0">Responsive design for desktop and mobile.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-5">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-4">
+				<div class="card h-100 shadow-sm border-0">
+					<div class="card-body">
+						<h5 class="fw-bold">Build your cookbook</h5>
+						<p class="text-secondary">Add recipes with photos, descriptions, and quick edits—all kept in your account.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card h-100 shadow-sm border-0">
+					<div class="card-body">
+						<h5 class="fw-bold">Stay organized</h5>
+						<p class="text-secondary">Use search to find dishes fast and keep your collection tidy.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card h-100 shadow-sm border-0">
+					<div class="card-body">
+						<h5 class="fw-bold">Share moments</h5>
+						<p class="text-secondary">Return to your favorites anytime and keep improving them.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
